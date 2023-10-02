@@ -74,7 +74,7 @@
             <div class="row">
                 <div class="col-12 col-md-2">
                     <!-- buttons -->
-                    <button type="button" class="btn btn-outline-primary w-100 btn-lg">
+                    <button type="button" class="btn btn-outline-primary w-100 btn-lg" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                         <i class="bi bi-pencil-square"></i>
                         New Email
                     </button>
@@ -98,26 +98,31 @@
                 <div class="col-12 col-md-10 border rounded-3 p-3">
                     <!-- emails -->
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
                         </li>
-                        <li class="list-group-item">
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
-                        </li><li class="list-group-item">
+                        </li>
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
-                        </li><li class="list-group-item">
+                        </li>
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
-                        </li><li class="list-group-item">
+                        </li>
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
-                        </li><li class="list-group-item">
+                        </li>
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
-                        </li><li class="list-group-item">
+                        </li>
+                        <li class="list-group-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <b>Dane Whitman</b> - Some Email Subject
                             <p class="ps-5 m-0 text-secondary">The rest of the email...</p>
                         </li>
@@ -139,6 +144,58 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Message Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><strong>To:</strong>&nbsp;Dane Whitman</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fs-4">Subject: Some Email Subject</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, at iure? Cumque, odio assumenda? Sint, error? Enim ipsa, voluptate consectetur magnam tempore amet, quidem voluptatem quibusdam mollitia laborum omnis nesciunt!
+                    Ratione iure similique magnam unde facere praesentium esse, dolore maxime! Animi deleniti optio recusandae repellat eligendi facere non nam accusamus ad amet odio suscipit blanditiis ipsa, veritatis ut. Debitis, assumenda.
+                    Eaque ab fuga, nihil officia, nesciunt unde laudantium iusto vitae aut doloribus quaerat aliquid, at eveniet expedita eum similique. Fugiat quaerat suscipit nostrum ut eos voluptate debitis vero similique qui!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Reply</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Email Modal -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <form action="#" method="post">
+                        <div class="modal-header">
+                            <label for="recipient-name" class="col-form-label">To:</label>
+                            <input required type="email" class="form-control mx-3" id="recipient-name">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label for="subject-name" class="col-form-label">Subject:</label>
+                                <input type="text" class="form-control" id="subject-name">
+                            </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea required class="form-control" id="message-text" placeholder="Enter your message here..." rows="5"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-secondary">Save as Draft</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap JS -->
         <script
